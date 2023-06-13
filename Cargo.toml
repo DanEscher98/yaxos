@@ -1,0 +1,14 @@
+[package]
+name = "yaxos"
+version = "0.1.0"
+edition = "2021"
+
+
+[dependencies]
+bootloader = { version = "0.9.8", features = ["map_physical_memory"]}
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
